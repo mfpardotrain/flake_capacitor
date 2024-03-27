@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  flake-ui:
+    container_name: flake-ui
+    build:
+      context: ./cancelled
+      dockerfile: Dockerfile
+      tags:
+        - "flake-ui:latest"
+    volumes:
+      - '.:/cancelled'
+      - '/cancelled/node_modules'
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+  flake-api:
+    container_name: flake-api
+    build:
+      context: ./flake_api
+      dockerfile: Dockerfile
+      tags:
+        - "flake-api:latest"
+    ports:
+      - 8090:8090
+    volumes:
+      - '/flake_api/pb_data'

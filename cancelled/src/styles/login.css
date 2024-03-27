@@ -1,0 +1,27 @@
+.default-input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.default-input-label {
+    position: absolute;
+    font-size: .8em;
+    text-transform: uppercase;
+    transform: translate(4px, 4px);
+}
+
+.default-input {
+    padding: 20px 0px 3px 3px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-evenly;
+}
+
+.logout-button {
+    border: none;
+}
