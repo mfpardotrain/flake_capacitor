@@ -3,8 +3,9 @@ import { useMutation, useQuery, } from 'react-query'
 import PocketBase from "pocketbase";
 import "./styles/plans.css";
 import { StatusContext } from './App.tsx';
+import { ENV } from './env/env'
 
-const pb = new PocketBase(process.env.REACT_APP_FLAKE_API_URL);
+const pb = new PocketBase(ENV.REACT_APP_FLAKE_API_URL);
 
 type PlanType = {
     description: string,

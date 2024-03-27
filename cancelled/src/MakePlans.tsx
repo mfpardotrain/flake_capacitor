@@ -6,8 +6,9 @@ import { StatusContext } from './App.tsx';
 import SelectDateTime from './SelectDateTime.tsx';
 import SelectFriends from './SelectFriends.tsx';
 import CurrentPlans from './CurrentPlans.tsx';
+import { ENV } from './env/env'
 
-const pb = new PocketBase(process.env.REACT_APP_FLAKE_API_URL);
+const pb = new PocketBase(ENV.REACT_APP_FLAKE_API_URL);
 
 type Items = { name: string, id: string }[]
 

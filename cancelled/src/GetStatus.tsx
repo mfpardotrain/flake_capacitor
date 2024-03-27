@@ -2,8 +2,9 @@ import PocketBase from "pocketbase";
 import "./styles/friends.css";
 import { useQuery } from "react-query";
 import { useState } from "react";
+import { ENV } from './env/env'
 
-const pb = new PocketBase(process.env.REACT_APP_FLAKE_API_URL);
+const pb = new PocketBase(ENV.REACT_APP_FLAKE_API_URL);
 
 function GetStatus() {
     const [statuses, setStatuses] = useState({});
