@@ -106,7 +106,10 @@ function App() {
             </StatusContext.Provider>
         </>
     ) : (
-        <LoggedOut setLoggedIn={setLoggedIn} />
+        <>
+            <Header />
+            <LoggedOut setLoggedIn={setLoggedIn} />
+        </>
     )
 }
 
