@@ -10,7 +10,6 @@ import { ENV } from './env/env'
 const pb = new PocketBase(ENV.REACT_APP_FLAKE_API_URL);
 
 function LoggedOut({ setLoggedIn, }: { setLoggedIn: (loggedIn: boolean) => void; }) {
-    console.log("API STUFF: ", ENV.REACT_APP_FLAKE_API_URL)
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [username, setUsername] = useState("");

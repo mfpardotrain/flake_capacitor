@@ -25,13 +25,15 @@
     flex-direction: row;
     justify-content: flex-start;
     max-width: 80px;
-    bottom: 5px;
-    right: 10px;
+    bottom: 30px;
+    right: 20px;
 }
 
 .page-number {
     color: rgb(53, 121, 240);
-    padding-right: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 2em;
 }
 
 .page-number:hover {
@@ -39,24 +41,24 @@
 }
 
 .page-chevron-left:before {
-    font-size: 1.2em;
+    font-size: 2em;
     color: rgb(53, 121, 240);
     content: "\2039";
 }
 
 .page-chevron-left {
-    transform: translate(-.2em, -.2em);
+    transform: translate(-.2em, .2em);
     padding-right: 5px;
 }
 
 .page-chevron-right:after {
-    font-size: 1.2em;
+    font-size: 2em;
     color: rgb(53, 121, 240);
     content: "\203A";
 }
 
 .page-chevron-right {
-    transform: translate(.2em, -.2em);
+    transform: translate(.2em, .2em);
     padding-right: 5px;
 }
 

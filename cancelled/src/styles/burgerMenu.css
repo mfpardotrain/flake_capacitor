@@ -1,9 +1,9 @@
 .main-container {
-    margin-top: 60px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100% - 60px);
+    height: calc(100% - 120px);
 }
 
 .selected-component-container {
@@ -33,9 +33,9 @@
 
 .burger-menu-button {
     position: fixed;
-    top: 10px;
+    top: 40px;
     right: 10px;
-    width: 40px;
+    width: 50px;
     height: 40px;
     font-size: 24px;
     background-color: white;

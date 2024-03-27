@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    height: 60px;
+    height: 120px;
     z-index: 7;
     background-color: rgb(120, 200, 189);
     border: none;
@@ -17,7 +17,7 @@
 .app-name {
     font-size: 30px;
     color: white;
-    padding: 10px 0px 0px 20px;
+    padding: 20px 0px 0px 20px;
     font-family: "Bubbler One", sans-serif;
     font-weight: 400;
     font-style: bold;
